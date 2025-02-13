@@ -106,3 +106,15 @@ def careers(request):
     else:
         jobs = Job.objects.all()  # Fetch all jobs
     return render(request, 'careers.html', {'jobs': jobs})
+
+def culture(request):
+    return render(request, 'culture.html')
+
+def education(request):
+    return render(request, 'education.html')
+
+def historical_place(request):
+    return render(request, 'historical_place.html')
+
+def facilities(request):
+    return render(request, 'facilities.html')

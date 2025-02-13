@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block start %}
+
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>गावातील शिक्षण | Education</title>
+    <style>
+        body {
+            font-family: "Poppins", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #e3f2fd;
+            text-align: center;
+        }
+
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?school,education') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero h1, .hero p {
+            font-size: 2.5em;
+            margin: 0;
+            color: black; /* Heading and subtitle in black */
+        }
+
+        .content {
+            padding: 20px;
+            text-align: left;
+            max-width: 800px;
+            margin: auto;
+            font-size: 1.2em;
+        }
+
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #bbdefb;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .school-img {
+            width: 100%;
+            max-width: 350px; /* Better display of images */
+            border-radius: 10px;
+            margin-top: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1>गावातील शिक्षण</h1>
+        <p>"शिक्षण हा उज्ज्वल भविष्यासाठी आधारस्तंभ"</p>
+    </header>
+
+    <div class="content">
+        <div class="section">
+            <h2>🏫 प्राथमिक शाळा (१ ली ते ४ थी)</h2>
+            <p>गावात एक प्राथमिक शाळा आहे, जिथे १ ली ते ४ थी पर्यंत शिक्षण दिले जाते.</p>
+            <p><strong>स्थापना:</strong> १९९५</p>
+            <p><strong>विद्यार्थी संख्या:</strong> १००+</p>
+            <p><strong>सुविधा:</strong> खेळाचे मैदान, वाचनालय, डिजिटल शिक्षण.</p>
+            <img src="{% static 'images/swati13.jpg' %}" alt="Primary School" class="school-img">
+        </div>
+
+        <div class="section">
+            <h2>🏫 माध्यमिक शाळा (५ वी ते १० वी)</h2>
+            <p>गावातील दुसरी शाळा ५ वी ते १० वी साठी आहे.</p>
+            <p><strong>स्थापना:</strong> २००५</p>
+            <p><strong>विद्यार्थी संख्या:</strong> २००+</p>
+            <p><strong>सुविधा:</strong> संगणक लॅब, विज्ञान प्रयोगशाळा, ग्रंथालय.</p>
+            <img src="{% static 'images/swati4.jpeg' %}" alt="Secondary School" class="school-img">
+        </div>
+    </div>
+</body>
+</html>
+{% endblock %}

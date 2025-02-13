@@ -1,0 +1,129 @@
+
+{%extends 'base.html'%}
+{% load static %}
+{%block start%}
+
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>गावातील सुविधा | Facilities</title>
+    <style>
+        body {
+            font-family: "Poppins", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f1f8e9;
+            text-align: center;
+        }
+
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?village,nature') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7); /* Added shadow for better visibility */
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+            text-transform: uppercase; /* Uppercase text for more emphasis */
+            letter-spacing: 2px; /* Spacing between letters for a stylish look */
+            color: black; /* Text color set to black */
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            margin-top: 10px;
+            font-weight: 600;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            color: black; /* Text color set to black */
+        }
+
+        .content {
+            padding: 20px;
+            text-align: left;
+            max-width: 900px;
+            margin: auto;
+            font-size: 1.2em;
+        }
+
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #dcedc8; /* Light green background for sections */
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2); /* Added shadow for better visibility */
+            transition: background 0.3s ease;
+        }
+
+        .section:hover {
+            background: #a5d6a7; /* Darker green when hovered */
+        }
+
+        .section img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .text {
+            flex: 1;
+        }
+
+        h2 {
+            color: #388e3c; /* Dark green color for the section title */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1>गावातील सुविधा</h1>
+        <p>"आधुनिक सुविधा – समृद्ध गाव"</p>
+    </header>
+
+    <div class="content">
+        <div class="section">
+            <img src="{% static 'images/swati14.jpg' %}" alt="Primary School" class="school-img">
+            <div class="text">
+                <h2>💧 पाणीपुरवठा</h2>
+                <p>गावात दोन विहिरी, हंडपंप आणि एक मोठी पाण्याची टाकी आहे, जी संपूर्ण गावाला पाणीपुरवठा करते.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <img src="{% static 'images/swati5.jpeg' %}" alt="Primary School" class="school-img">
+            <div class="text">
+                <h2>🏛 ग्रामपंचायत</h2>
+                <p>ग्रामपंचायत गावाच्या विकासासाठी कार्य करते. येथे विविध योजनांची अंमलबजावणी केली जाते.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <img src="path_to_your_image/health_center.jpg" alt="आरोग्य केंद्र">
+            <div class="text">
+                <h2>🏥 आरोग्य केंद्र</h2>
+                <p>गावात एक प्राथमिक आरोग्य केंद्र आहे, जिथे डॉक्टर आणि परिचारिका दररोज सेवा देतात.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <img src="path_to_your_image/ration_shop.jpg" alt="रेशन दुकान">
+            <div class="text">
+                <h2>🍚 रेशन दुकान</h2>
+                <p>गावात सरकारी रेशन दुकान आहे, जिथे गरजू लोकांना स्वस्त दरात अन्नधान्य पुरवले जाते.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+{% endblock %}

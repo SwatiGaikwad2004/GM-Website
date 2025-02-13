@@ -34,4 +34,11 @@ urlpatterns = [
     path('register_page/', register_page, name='register_page'),
     path('logout_page/', logout_page, name='logout_page'),
     path('submit_form/', views.submit_form, name='submit_form'),
+
+    path('culture/', culture, name='culture'),
+    path('education/', education, name='education'),
+    path('historical_place/', historical_place, name='historical_place'),
+    path('facilities/', facilities, name='facilities'),
+     
+
 ]
